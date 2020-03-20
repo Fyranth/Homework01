@@ -7,13 +7,26 @@
     <body>
         <form name="autorization">
             <fieldset name="autorization_fields">
+                <!-- т.к. до стилей еще не дошли использую табличку для выравнивания полей. -->
                 <legend>Авторизуйтесь</legend>
-                <p>
-                    Адрес эл.почты:  <input type="email" required>
-                </p>
-                <p>
-                    Пароль: <input type="password" required>
-                </p>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="auth_email">Адрес эл.почты:</label>
+                        </td>
+                        <td>
+                            <input id="auth_email" type="email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="auth_password">Пароль:</label>
+                        </td>
+                        <td>
+                            <input id="auth_password" type="password" required>
+                        </td>
+                    </tr>                 
+                </table>
                 <button>Войти</button>
                 <input type="Reset" value="Отмена">
             </fieldset>

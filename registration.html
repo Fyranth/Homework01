@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Регистрация</title>
+        <meta charset="UTF-8">
+        <meta description="Форма регистрации">       
+    </head>
+    <body>
+        <form name="registration">
+            <fieldset name="registration_fields">
+                <!-- т.к. до стилей еще не дошли использую табличку для выравнивания полей. -->
+                <legend>Заполните поля регистрации</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="reg_email">Адрес эл.почты:</label>
+                            </td>
+                            <td>
+                                <input type="email" id="reg_email" placeholder="Введите адрес эл.почты" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="reg_login">Логин:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="reg_login" minlength="6" maxlength="32" placeholder="Введите логин" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="reg_password">Пароль:</label>
+                            </td>
+                            <td>
+                                <input type="password" id="reg_password" minlength="6" maxlength="32" placeholder="Введите пароль" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="reg_password_confirm">Пароль:</label>
+                            </td>
+                            <td>
+                                <input type="password" id="reg_password_confirm" minlength="6" maxlength="32" placeholder="Подтвердите пароль" required>
+                            </td>
+                        </tr>
+                    </table>
+            </fieldset>
+            <br>
+            <fieldset name="registration_avatar">
+                <p><Label for="reg_avatar">Загрузите аватар (необязательно)</Label></p>
+                <p><input type="file" value="Выберите картинку" accept="image/*"></p>               
+            </fieldset>
+            <br>
+            <fieldset name="registration_buttons">
+                <button>Зарегистрироваться</button>
+                <input type="Reset" value="Отмена">
+            </fieldset>
+        </form>
+    </body>
+</html>
